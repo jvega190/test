@@ -3,6 +3,13 @@
 Showdown is a Javascript Markdown to HTML converter, based on the original works by John Gruber. It can be used client side (in the browser) or server side (with Node or io). 
 
 
+<script>alert('xss');</script>
+
+hello <a name="n" href="javascript:alert('xss')">*you*</a>
+
+[some text](javascript:alert('xss'))
+
+
 # Installation
 
 ## Download tarball
